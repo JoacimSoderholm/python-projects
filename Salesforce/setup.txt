@@ -1,0 +1,4 @@
+joacim.soderholm@tele2.com
+Lösenord
+Security Token
+C:\Python\
