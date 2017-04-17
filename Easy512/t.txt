@@ -1,3 +1,0 @@
-T04 on && I03 off -> Pellets tog slut, bottenskruv har kört klart, pellets kom.
-
-reset T02, T04 -> nollställ båda timers som är on.
