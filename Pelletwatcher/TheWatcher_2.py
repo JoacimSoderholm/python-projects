@@ -67,9 +67,19 @@ class Reporter():
 	
 	def __init__(self, master=None):
 		pass
-					
-	def go(self):
+		
+		
+	def getCurrentTemperature(self):
+		try:
+			temp = requests.get('http://api.openweathermap.org/data/2.5/weather?lat=59.365&lon=17.997&appid=4c6e23d16d15eee8ebb017eec94fc460')
+			return temp.json().get('main').get('temp')
+		except Exception as detail:
+			payload = json.dumps({ 'Exception' : str(detail) })
+			requests.post('http://logs-01.loggly.com/inputs/54aa2a22-9d21-4ea7-8518-186e0add55f0/tag/ERROR/', data=payload)
+			#os.system('sudo shutdown -r now')
+			return 0
 
+	def go(self):
 		GPIO.setwarnings(False)
 		GPIO.setmode(GPIO.BCM)
 		GPIO.setup(self.MoellerChannel, GPIO.IN)
@@ -88,30 +98,26 @@ class Reporter():
 			try:
 				currentMoellerValue = GPIO.input(self.MoellerChannel)
 				currentMitsubishiValue = GPIO.input(self.MitsubishiChannel)
-				#print("Moeller: " + str(currentMoellerValue) + ", Mitsubishi: " + str(currentMitsubishiValue))
 				
 				if currentMoellerValue != lastReadMoellerValue and currentMoellerValue == 1:
 					stopToStartMoeller = self.MoellerChannelStartTime - self.MoellerChannelStopTime
-					logMoellerStopToStart = divmod(stopToStartMoeller.seconds, 60)[0] + round(divmod(stopToStartMoeller.seconds, 60)[1] / 60, 2)
+					logMoellerStopToStart = divmod(stopToStartMoeller.total_seconds(), 60)[0] + round(divmod(stopToStartMoeller.total_seconds(), 60)[1] / 60, 2)
 					
-					logMitsubishiConsumption = round((self.MitsubishiKilos / (datetime.datetime.now() - self.MitsubishiReset).seconds) * 3600 * 24, 2)
+					logMitsubishiConsumption = round((self.MitsubishiKilos / (datetime.datetime.now() - self.MitsubishiReset).total_seconds()) * 3600 * 24, 2)
 					self.MitsubishiReset = datetime.datetime.now()
 					self.MitsubishiKilos = 0
 					
 					self.MoellerChannelStopTime = datetime.datetime.now()
 					runTimeMoeller = self.MoellerChannelStopTime - self.MoellerChannelStartTime
-					logMoellerRunTime = divmod(runTimeMoeller.seconds, 60)[0] + round(divmod(runTimeMoeller.seconds, 60)[1] / 60, 2)
+					logMoellerRunTime = divmod(runTimeMoeller.total_seconds(), 60)[0] + round(divmod(runTimeMoeller.total_seconds(), 60)[1] / 60, 2)
 					
-					payload = json.dumps({ 'Moeller-run-time-minutes' : logMoellerRunTime, 'Moeller-off-time-minutes' : logMoellerStopToStart, 'Mitsubishi-daily-consumption-rate-kgs' : logMitsubishiConsumption })
+					currentTemperature = self.getCurrentTemperature()
+					payload = json.dumps( { 'Moeller-run-time-minutes' : logMoellerRunTime, 'Moeller-off-time-minutes' : logMoellerStopToStart, 'Mitsubishi-daily-consumption-rate-kgs' : logMitsubishiConsumption, 'Kelvin' : currentTemperature, 'Celsius' : round(currentTemperature - 273.15, 2)} )
 					
 					headers={'content-type' : 'application/x-www-form-urlencoded'}
-					#print(payload)
-					requests.post('http://logs-01.loggly.com/inputs/54aa2a22-9d21-4ea7-8518-186e0add55f0/tag/Pellets/', data=payload, headers=headers)
-					
-					#print(self.Today)
-					#print(datetime.datetime.now().day)
+					print(payload)
+					#requests.post('http://logs-01.loggly.com/inputs/54aa2a22-9d21-4ea7-8518-186e0add55f0/tag/Pellets/', data=payload, headers=headers)
 					if datetime.datetime.now().day != self.Today: # Once a day we also send an email, just for show.
-						#pass
 						self.Today = datetime.datetime.now().day
 						self.sendEmail(payload) #enable and enter credentials in sendMail function to use this.
 					
@@ -119,16 +125,14 @@ class Reporter():
 					self.MoellerChannelStartTime = datetime.datetime.now()
 
 				if currentMitsubishiValue == 0:
-					self.MitsubishiKilos += 0.007 #per second!!!, depends on time.sleep() below.
+					self.MitsubishiKilos += 0.007 #per second, depends on time.sleep() below.
 
 				lastReadMoellerValue = currentMoellerValue
 				lastReadMitsubishiValue = currentMitsubishiValue
 				time.sleep(1)
 			except Exception as detail:
 				payload = json.dumps({ 'Exception' : str(detail) })
-				#print(payload)
 				requests.post('http://logs-01.loggly.com/inputs/54aa2a22-9d21-4ea7-8518-186e0add55f0/tag/ERROR/', data=payload)
-				#exit(0)
 				os.system('sudo shutdown -r now')
 
 
