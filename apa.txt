@@ -1,0 +1,18 @@
+ Volume in drive C is OSDisk
+ Volume Serial Number is 3E5B-38E9
+
+ Directory of C:\work\work\python-projects
+
+2019-03-26  17:56    <DIR>          .
+2019-03-26  17:56    <DIR>          ..
+2019-03-26  14:02             1ÿ067 .gitignore
+2019-03-26  17:56                 0 apa.txt
+2019-03-26  14:02    <DIR>          Easy512
+2019-03-26  16:43                55 git-tips-and-tricks.txt
+2019-03-26  14:02    <DIR>          Mitsubishi
+2019-03-26  17:47    <DIR>          Pelletwatcher
+2019-03-26  16:43                41 README.md
+2019-03-26  14:02    <DIR>          Salesforce
+2019-03-26  17:55                 0 testfile.txt
+               5 File(s)          1ÿ163 bytes
+               6 Dir(s)   8ÿ604ÿ979ÿ200 bytes free
