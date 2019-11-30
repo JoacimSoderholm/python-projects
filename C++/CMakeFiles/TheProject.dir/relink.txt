@@ -1,1 +1,0 @@
-/usr/bin/c++        -o CMakeFiles/CMakeRelink.dir/TheProject src/libsrc.a 

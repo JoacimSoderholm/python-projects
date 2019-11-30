@@ -1,0 +1,5 @@
+export PATH="/opt/rh/llvm-build/bin${PATH:+:${PATH}}"
+export LD_LIBRARY_PATH="/opt/rh/llvm-build/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+#export MANPATH="/opt/rh/llvm-toolset-7.0/root/usr/share/man:${MANPATH:-}"
+#export PKG_CONFIG_PATH="/opt/rh/llvm-toolset-7.0/root/usr/lib64/pkgconfig${PKG_CONFIG_PATH:+:${PKG_CONFIG_PATH}}"
+#export PYTHONPATH="/opt/rh/llvm-toolset-7.0/root/usr/lib/python2.7/site-packages${PYTHONPATH:+:${PYTHONPATH}}"

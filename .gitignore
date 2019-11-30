@@ -88,6 +88,16 @@ ENV/
 # Rope project settings
 .ropeproject
 
-# executables
-*.exe
+#CMake
+CMakeCache.txt
+CMakeFiles/*
+*.o
+*.cpp~
+*.cmake
+*.bin
+*.out
+*.make
+Makefile
 
+#executables
+*.exe
