@@ -1,0 +1,2 @@
+/home/josd/src/python-projects/C++/src/CMakeFiles/edit_cache.dir
+/home/josd/src/python-projects/C++/src/CMakeFiles/rebuild_cache.dir

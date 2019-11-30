@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/josd/src/python-projects/C++/src/TheProject.c
+TheProject.h
+/home/josd/src/python-projects/C++/src/TheProject.h
+iostream
+-
+cmath
+-
+iomanip
+-
+
+/home/josd/src/python-projects/C++/src/TheProject.h
+

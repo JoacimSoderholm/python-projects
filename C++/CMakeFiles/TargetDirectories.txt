@@ -1,0 +1,12 @@
+/home/josd/src/python-projects/C++/CMakeFiles/edit_cache.dir
+/home/josd/src/python-projects/C++/CMakeFiles/list_install_components.dir
+/home/josd/src/python-projects/C++/CMakeFiles/install.dir
+/home/josd/src/python-projects/C++/CMakeFiles/install/local.dir
+/home/josd/src/python-projects/C++/CMakeFiles/rebuild_cache.dir
+/home/josd/src/python-projects/C++/CMakeFiles/TheProject.dir
+/home/josd/src/python-projects/C++/src/CMakeFiles/edit_cache.dir
+/home/josd/src/python-projects/C++/src/CMakeFiles/rebuild_cache.dir
+/home/josd/src/python-projects/C++/src/CMakeFiles/list_install_components.dir
+/home/josd/src/python-projects/C++/src/CMakeFiles/install.dir
+/home/josd/src/python-projects/C++/src/CMakeFiles/install/local.dir
+/home/josd/src/python-projects/C++/src/CMakeFiles/src.dir

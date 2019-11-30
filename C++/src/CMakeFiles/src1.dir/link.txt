@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsrc1.a  CMakeFiles/src1.dir/Bicycle.cpp.o
+/usr/bin/ranlib libsrc1.a
