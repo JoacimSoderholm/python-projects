@@ -26,7 +26,7 @@ int main(int argc, char** argv)
     double x,x1,e,fx,fx1;
     std::cout.precision(4);        //set the precision
     std::cout.setf(std::ios::fixed);    
-    std::cout<<"Enter the initial guess\n";    //take an intial guess
+    std::cout<<"Enter the initial Börje\n";    //take an intial guess
     std::cin>>x1;
     std::cout<<"Enter desired accuracy\n";    //take the desired accuracy
     std::cin>>e;

@@ -88,9 +88,16 @@ ENV/
 # Rope project settings
 .ropeproject
 
-#CMake
+# Doxygen
+doxydoc
+doxydoc/.*
+fontconfig
+fontconfig.*
+
+# CMake
 CMakeCache.txt
-CMakeFiles/*
+CMakeFiles/
+CMakeFiles/.*
 *.o
 *.cpp~
 *.cmake

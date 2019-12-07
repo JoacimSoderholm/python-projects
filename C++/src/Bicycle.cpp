@@ -4,6 +4,7 @@
 // Available at www.BruceEckel.com.
 // Defines classes to build bicycles
 // Illustrates the Builder Design Pattern
+// JOACIM SÖDERHOLM
 #include <cassert>
 #include <cstddef>
 #include <iostream>
@@ -20,7 +21,7 @@ operator<<(ostream& os, const BicyclePart& bp) {
   return os << bp.names[bp.id];
 }
 std::string BicyclePart::names[NPARTS] = {
-  "Frame", "Wheel", "Seat", "Derailleur",
+  "Frame", "Börje Måsbricka", "Seat", "Derailleur",
   "Handlebar", "Sprocket", "Rack", "Shock"};
 
 // Bicycle implementation

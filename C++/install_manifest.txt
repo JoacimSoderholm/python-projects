@@ -1,1 +1,2 @@
-/home/josd/src/python-projects/C++/bin/TheProject
+/home/josd/python-projects/C++/./bin/TheProject
+/home/josd/python-projects/C++/bin/TheProject

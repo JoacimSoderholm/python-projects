@@ -1,0 +1,92 @@
+[
+{
+  "directory": "/home/josd/python-projects/C++/src",
+  "command": "clang++  --target=x86_64-unknown-linux-gnu   -I/home/josd/python-projects/C++/src/../include    -o CMakeFiles/src.dir/AbstractFactory.cpp.o -c /home/josd/python-projects/C++/src/AbstractFactory.cpp",
+  "file": "/home/josd/python-projects/C++/src/AbstractFactory.cpp"
+},
+{
+  "directory": "/home/josd/python-projects/C++/src",
+  "command": "clang++  --target=x86_64-unknown-linux-gnu   -I/home/josd/python-projects/C++/src/../include    -o CMakeFiles/src.dir/BeeAndFlowers.cpp.o -c /home/josd/python-projects/C++/src/BeeAndFlowers.cpp",
+  "file": "/home/josd/python-projects/C++/src/BeeAndFlowers.cpp"
+},
+{
+  "directory": "/home/josd/python-projects/C++/src",
+  "command": "clang++  --target=x86_64-unknown-linux-gnu   -I/home/josd/python-projects/C++/src/../include    -o CMakeFiles/src.dir/Bicycle.cpp.o -c /home/josd/python-projects/C++/src/Bicycle.cpp",
+  "file": "/home/josd/python-projects/C++/src/Bicycle.cpp"
+},
+{
+  "directory": "/home/josd/python-projects/C++/src",
+  "command": "clang++  --target=x86_64-unknown-linux-gnu   -I/home/josd/python-projects/C++/src/../include    -o CMakeFiles/src.dir/BuildBicycles.cpp.o -c /home/josd/python-projects/C++/src/BuildBicycles.cpp",
+  "file": "/home/josd/python-projects/C++/src/BuildBicycles.cpp"
+},
+{
+  "directory": "/home/josd/python-projects/C++/src",
+  "command": "clang++  --target=x86_64-unknown-linux-gnu   -I/home/josd/python-projects/C++/src/../include    -o CMakeFiles/src.dir/CuriousSingleton.cpp.o -c /home/josd/python-projects/C++/src/CuriousSingleton.cpp",
+  "file": "/home/josd/python-projects/C++/src/CuriousSingleton.cpp"
+},
+{
+  "directory": "/home/josd/python-projects/C++/src",
+  "command": "clang++  --target=x86_64-unknown-linux-gnu   -I/home/josd/python-projects/C++/src/../include    -o CMakeFiles/src.dir/FunctionStaticSingleton.cpp.o -c /home/josd/python-projects/C++/src/FunctionStaticSingleton.cpp",
+  "file": "/home/josd/python-projects/C++/src/FunctionStaticSingleton.cpp"
+},
+{
+  "directory": "/home/josd/python-projects/C++/src",
+  "command": "clang++  --target=x86_64-unknown-linux-gnu   -I/home/josd/python-projects/C++/src/../include    -o CMakeFiles/src.dir/InnerClassIdiom.cpp.o -c /home/josd/python-projects/C++/src/InnerClassIdiom.cpp",
+  "file": "/home/josd/python-projects/C++/src/InnerClassIdiom.cpp"
+},
+{
+  "directory": "/home/josd/python-projects/C++/src",
+  "command": "clang++  --target=x86_64-unknown-linux-gnu   -I/home/josd/python-projects/C++/src/../include    -o CMakeFiles/src.dir/LogFile.cpp.o -c /home/josd/python-projects/C++/src/LogFile.cpp",
+  "file": "/home/josd/python-projects/C++/src/LogFile.cpp"
+},
+{
+  "directory": "/home/josd/python-projects/C++/src",
+  "command": "clang++  --target=x86_64-unknown-linux-gnu   -I/home/josd/python-projects/C++/src/../include    -o CMakeFiles/src.dir/ObservedFlower.cpp.o -c /home/josd/python-projects/C++/src/ObservedFlower.cpp",
+  "file": "/home/josd/python-projects/C++/src/ObservedFlower.cpp"
+},
+{
+  "directory": "/home/josd/python-projects/C++/src",
+  "command": "clang++  --target=x86_64-unknown-linux-gnu   -I/home/josd/python-projects/C++/src/../include    -o CMakeFiles/src.dir/PaperScissorsRock.cpp.o -c /home/josd/python-projects/C++/src/PaperScissorsRock.cpp",
+  "file": "/home/josd/python-projects/C++/src/PaperScissorsRock.cpp"
+},
+{
+  "directory": "/home/josd/python-projects/C++/src",
+  "command": "clang++  --target=x86_64-unknown-linux-gnu   -I/home/josd/python-projects/C++/src/../include    -o CMakeFiles/src.dir/ShapeFactory1.cpp.o -c /home/josd/python-projects/C++/src/ShapeFactory1.cpp",
+  "file": "/home/josd/python-projects/C++/src/ShapeFactory1.cpp"
+},
+{
+  "directory": "/home/josd/python-projects/C++/src",
+  "command": "clang++  --target=x86_64-unknown-linux-gnu   -I/home/josd/python-projects/C++/src/../include    -o CMakeFiles/src.dir/ShapeFactory2.cpp.o -c /home/josd/python-projects/C++/src/ShapeFactory2.cpp",
+  "file": "/home/josd/python-projects/C++/src/ShapeFactory2.cpp"
+},
+{
+  "directory": "/home/josd/python-projects/C++/src",
+  "command": "clang++  --target=x86_64-unknown-linux-gnu   -I/home/josd/python-projects/C++/src/../include    -o CMakeFiles/src.dir/SingletonPattern.cpp.o -c /home/josd/python-projects/C++/src/SingletonPattern.cpp",
+  "file": "/home/josd/python-projects/C++/src/SingletonPattern.cpp"
+},
+{
+  "directory": "/home/josd/python-projects/C++/src",
+  "command": "clang++  --target=x86_64-unknown-linux-gnu   -I/home/josd/python-projects/C++/src/../include    -o CMakeFiles/src.dir/SingletonPattern2.cpp.o -c /home/josd/python-projects/C++/src/SingletonPattern2.cpp",
+  "file": "/home/josd/python-projects/C++/src/SingletonPattern2.cpp"
+},
+{
+  "directory": "/home/josd/python-projects/C++/src",
+  "command": "clang++  --target=x86_64-unknown-linux-gnu   -I/home/josd/python-projects/C++/src/../include    -o CMakeFiles/src.dir/TheProject.cpp.o -c /home/josd/python-projects/C++/src/TheProject.cpp",
+  "file": "/home/josd/python-projects/C++/src/TheProject.cpp"
+},
+{
+  "directory": "/home/josd/python-projects/C++/src",
+  "command": "clang++  --target=x86_64-unknown-linux-gnu   -I/home/josd/python-projects/C++/src/../include    -o CMakeFiles/src.dir/UseLog1.cpp.o -c /home/josd/python-projects/C++/src/UseLog1.cpp",
+  "file": "/home/josd/python-projects/C++/src/UseLog1.cpp"
+},
+{
+  "directory": "/home/josd/python-projects/C++/src",
+  "command": "clang++  --target=x86_64-unknown-linux-gnu   -I/home/josd/python-projects/C++/src/../include    -o CMakeFiles/src.dir/UseLog2.cpp.o -c /home/josd/python-projects/C++/src/UseLog2.cpp",
+  "file": "/home/josd/python-projects/C++/src/UseLog2.cpp"
+},
+{
+  "directory": "/home/josd/python-projects/C++/src",
+  "command": "clang++  --target=x86_64-unknown-linux-gnu   -I/home/josd/python-projects/C++/src/../include    -o CMakeFiles/src.dir/VirtualConstructor.cpp.o -c /home/josd/python-projects/C++/src/VirtualConstructor.cpp",
+  "file": "/home/josd/python-projects/C++/src/VirtualConstructor.cpp"
+}
+]
